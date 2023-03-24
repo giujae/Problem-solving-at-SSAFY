@@ -1,9 +1,10 @@
 import sys
+input = sys.stdin.readline
 
-t = int(sys.stdin.readline())
+t = int(input())
 for _ in range(t):
-    n = int(sys.stdin.readline())
-    call = [str(sys.stdin.readline().strip()) for _ in range(n)] # 전화번호를 문자열로 받는다.
+    n = int(input())
+    call = [str(input().strip()) for _ in range(n)] # 전화번호를 문자열로 받는다.
     call.sort() # 오름차순으로 정렬하여 사전순으로 정렬
     chek = "yes" # 일관성이 있는지 체크
 
